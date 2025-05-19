@@ -1,3 +1,4 @@
+/* --- ESTILOS ORIGINAIS (sem alteração) --- */
 *{
     font-family: 'Nunito', sans-serif;
 }
@@ -8,7 +9,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .conteudo{
@@ -16,20 +16,16 @@ main{
     height: 80%;
 }
 
-
 .caixa-mensagem{
     height: 80%;
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-color: #cbbca8;
-
     padding-top: 20px;
     border-radius: 5px 5px 0px 0px;
-
+    overflow: scroll;
 }
 
 .caixa-inputs{
@@ -38,7 +34,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-top: 1px solid #fff;
     background-color: #cbbca8;
 }
@@ -46,7 +41,6 @@ main{
 .inputs{
     width: 95%;
     height: 100%;
-
     display: flex;
     align-items: center;
 }
@@ -54,14 +48,11 @@ main{
 .ipt-texto{
     width: 90%;
     height: 30px;
-
     border: none;
     outline: none;
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
-
     font-weight: 700;
-
     margin-right: 15px;
 }
 
@@ -69,13 +60,10 @@ main{
     background-color: rgba(50, 115, 255, 1);
     border: none;
     border-radius: 5px;
-
     padding: 10.8px 20px;
-
     font-weight: 700;
     color: #fff;
 }
-
 
 .mensagens{
     width: 95%;
@@ -87,12 +75,10 @@ main{
     margin-bottom: 10px;
     max-width: 50%;
     width: fit-content;
-
     padding: 5px 10px;
     background-color: #fff;
     position: relative;
     overflow: visible;
-
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
@@ -100,8 +86,8 @@ main{
 .hora{
     font-weight: 700;
     font-size: 8px;
-    display: flex;
-    justify-content: end;
+    position: absolute;
+    bottom: 0;
 }
 
 .msg-branca::before{
@@ -115,7 +101,6 @@ main{
     left: 0;
     top: 0;
     transform: rotate(45deg) translate(-6px, -1px);
-
 }
 
 .msg-azul{
@@ -123,7 +108,6 @@ main{
     margin-bottom: 10px;
     max-width: 50%;
     width: fit-content;
-
     padding: 5px 10px;
     background-color: #688FE2;
     position: relative;
@@ -143,7 +127,29 @@ main{
     right: 0;
     top: 0;
     transform: rotate(74deg) translate(-2px, -4px);
-
 }
 
+.chat-date{
+    background-color: rgba(26, 71, 58, 0.664);
+    color: beige;
+    width: 95px;
+    border-radius: 2px;
+    margin: 10px auto; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;    
+    padding: 2px;
+}
 
+.deleta{
+    border: none;
+    background:#688FE2 ;
+    margin-left: 85%;
+}
+
+.hr-del{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    position: relative;
+}
