@@ -1,0 +1,34 @@
+<main class="main">   
+    <div class="conteudo">
+
+        <div class="caixa-mensagem">
+             <div class="mensagens">
+                <div>
+
+                </div>
+                <div class="msg-branca">
+                    <p>Olá Tudo bem</p>
+                    <p class="hora">12:30</p>
+                </div>
+
+                <div class="msg-azul" *ngFor="let mensagem of mensagens; index as posicao">
+                    <p>{{ mensagem.texto}}</p>
+                    <p class="hora"> {{mensagem.hora}}</p>
+                </div>
+             </div>
+        </div>
+        <div class="caixa-inputs">
+            <div class="inputs">
+                <input type="text" 
+                name="textoMsg" id="textoMsg"
+                [(ngModel)]="textoMsg"
+                (keydown.enter)="enviarMsg()" 
+                class="ipt-texto" 
+                placeholder="Digite uma mensagem...">
+                
+                <button type="button" class="btn-enviar" (click)="enviarMsg()">Enviar</button>
+            </div>
+        </div>
+
+    </div>
+</main>
